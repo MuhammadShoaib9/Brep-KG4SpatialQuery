@@ -1,0 +1,2120 @@
+[
+  {
+    "query_id": "I001",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which walls touch Tür-003?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Tür-003",
+        "type": "IfcDoor"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Tür-003",
+        "type": "IfcDoor"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 121,
+      "source_resolved": "Tür-003"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 4.195467710494995,
+    "t_retrieval": 0.12178254127502441,
+    "t_computation": 2.833097457885742,
+    "t_response": 2.257854700088501,
+    "total_time": 9.408202409744263,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I002",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all slabs that cover Wand-008.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 26,
+      "source_resolved": "Wand-008"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5651044845581055,
+    "t_retrieval": 0.049646854400634766,
+    "t_computation": 0.5112640857696533,
+    "t_response": 1.8807854652404785,
+    "total_time": 5.006800889968872,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I003",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Are there any windows disjoint from Treppe-EG?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-009",
+        "Fenster-008",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-012",
+        "Fenster-013",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-015",
+        "Fenster-015",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-007",
+        "Fenster-006",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-007",
+        "Fenster-006",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002"
+      ],
+      "total_candidates_checked": 206,
+      "source_resolved": "Treppe-EG"
+    },
+    "actual_result": {
+      "matches": [
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-009",
+        "Fenster-008",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-012",
+        "Fenster-013",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-003",
+        "Fenster-015",
+        "Fenster-015",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-007",
+        "Fenster-006",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-004",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-005",
+        "Fenster-007",
+        "Fenster-006",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002",
+        "Fenster-002"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.1129636764526367,
+    "t_retrieval": 0.029781103134155273,
+    "t_computation": 1.8744432926177979,
+    "t_response": 0.4439234733581543,
+    "total_time": 4.463137626647949,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I004",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which doors touch Wand-017?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-017",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-017",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Tür-006"
+      ],
+      "total_candidates_checked": 77,
+      "source_resolved": "Wand-017"
+    },
+    "actual_result": {
+      "matches": [
+        "Tür-006"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.506089687347412,
+    "t_retrieval": 0.012614727020263672,
+    "t_computation": 0.696152925491333,
+    "t_response": 1.6402623653411865,
+    "total_time": 4.856116056442261,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I005",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "Show me all walls on Erdgeschoss that touch Tür-006.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Tür-006",
+        "type": "IfcDoor"
+      },
+      "storey_filter": "Erdgeschoss"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Tür-006",
+        "type": "IfcDoor"
+      },
+      "storey_filter": "Erdgeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Wand-017"
+      ],
+      "total_candidates_checked": 29,
+      "source_resolved": "Tür-006"
+    },
+    "actual_result": {
+      "matches": [
+        "Wand-017"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.7097718715667725,
+    "t_retrieval": 0.10373520851135254,
+    "t_computation": 0.3242924213409424,
+    "t_response": 1.5705358982086182,
+    "total_time": 5.717018365859985,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I006",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Is there any column that touches Wand-029?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcColumn",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-029",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcColumn",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-029",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 2,
+      "source_resolved": "Wand-029"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5055501461029053,
+    "t_retrieval": 0.016660690307617188,
+    "t_computation": 0.016992807388305664,
+    "t_response": 1.254368782043457,
+    "total_time": 3.793572425842285,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I007",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which spaces are disjoint from Wand-030?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-030",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-030",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "017",
+        "101",
+        "102",
+        "103",
+        "116",
+        "115",
+        "113",
+        "112",
+        "111",
+        "105",
+        "110",
+        "109",
+        "108",
+        "107",
+        "106",
+        "118",
+        "104",
+        "114",
+        "117",
+        "220",
+        "214",
+        "213",
+        "222",
+        "211",
+        "221",
+        "207",
+        "206",
+        "210",
+        "219",
+        "218",
+        "217",
+        "215",
+        "204",
+        "201",
+        "208",
+        "202",
+        "203",
+        "209",
+        "212",
+        "205",
+        "216",
+        "313",
+        "302",
+        "303",
+        "304",
+        "305",
+        "318",
+        "317",
+        "316",
+        "315",
+        "306",
+        "307",
+        "312",
+        "311",
+        "310",
+        "309",
+        "308",
+        "314",
+        "301",
+        "319",
+        "320",
+        "321",
+        "322",
+        "403",
+        "402",
+        "401"
+      ],
+      "total_candidates_checked": 82,
+      "source_resolved": "Wand-030"
+    },
+    "actual_result": {
+      "matches": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "017",
+        "101",
+        "102",
+        "103",
+        "116",
+        "115",
+        "113",
+        "112",
+        "111",
+        "105",
+        "110",
+        "109",
+        "108",
+        "107",
+        "106",
+        "118",
+        "104",
+        "114",
+        "117",
+        "220",
+        "214",
+        "213",
+        "222",
+        "211",
+        "221",
+        "207",
+        "206",
+        "210",
+        "219",
+        "218",
+        "217",
+        "215",
+        "204",
+        "201",
+        "208",
+        "202",
+        "203",
+        "209",
+        "212",
+        "205",
+        "216",
+        "313",
+        "302",
+        "303",
+        "304",
+        "305",
+        "318",
+        "317",
+        "316",
+        "315",
+        "306",
+        "307",
+        "312",
+        "311",
+        "310",
+        "309",
+        "308",
+        "314",
+        "301",
+        "319",
+        "320",
+        "321",
+        "322",
+        "403",
+        "402",
+        "401"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.881765842437744,
+    "t_retrieval": 0.010475397109985352,
+    "t_computation": 0.6911089420318604,
+    "t_response": 2.0521998405456543,
+    "total_time": 6.635550022125244,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I008",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all railings on Dachgeschoss that touch Gelaender-4-1.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcRailing",
+      "source": {
+        "identifier": "name",
+        "value": "Gelaender-4-1",
+        "type": "IfcRailing"
+      },
+      "storey_filter": "Dachgeschoss"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcRailing",
+      "source": {
+        "identifier": "name",
+        "value": "Gelaender-4-1",
+        "type": "IfcRailing"
+      },
+      "storey_filter": "Dachgeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Gelaender-4-3"
+      ],
+      "total_candidates_checked": 2,
+      "source_resolved": "Gelaender-4-1"
+    },
+    "actual_result": {
+      "matches": [
+        "Gelaender-4-3"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.4536707401275635,
+    "t_retrieval": 0.05376267433166504,
+    "t_computation": 0.042682647705078125,
+    "t_response": 1.8926043510437012,
+    "total_time": 5.4551661014556885,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I009",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Does Treppe-KG touch any walls?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Treppe-KG",
+        "type": "IfcStair"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Treppe-KG",
+        "type": "IfcStair"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Wand-002",
+        "Wand-006",
+        "Wand-004",
+        "Wand-003",
+        "Wand-030",
+        "Wand-031",
+        "Wand-005",
+        "Wand-005"
+      ],
+      "total_candidates_checked": 121,
+      "source_resolved": "Treppe-KG"
+    },
+    "actual_result": {
+      "matches": [
+        "Wand-002",
+        "Wand-006",
+        "Wand-004",
+        "Wand-003",
+        "Wand-030",
+        "Wand-031",
+        "Wand-005",
+        "Wand-005"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.052307605743408,
+    "t_retrieval": 0.030127286911010742,
+    "t_computation": 22.032986640930176,
+    "t_response": 4.1707353591918945,
+    "total_time": 29.28615689277649,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I010",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which windows touch Wand-031?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-031",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-031",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 206,
+      "source_resolved": "Wand-031"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.800215721130371,
+    "t_retrieval": 0.00030493736267089844,
+    "t_computation": 1.4757556915283203,
+    "t_response": 2.101741075515747,
+    "total_time": 6.387969970703125,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I011",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "Tell me all walls that touch Fenster-008.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Fenster-008",
+        "type": "IfcWindow"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Fenster-008",
+        "type": "IfcWindow"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Wand-007"
+      ],
+      "total_candidates_checked": 121,
+      "source_resolved": "Fenster-008"
+    },
+    "actual_result": {
+      "matches": [
+        "Wand-007"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.2865278720855713,
+    "t_retrieval": 0.02342510223388672,
+    "t_computation": 0.8543212413787842,
+    "t_response": 1.5738511085510254,
+    "total_time": 4.738125324249268,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I012",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Are there any doors touching Wand-032?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-032",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-032",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 77,
+      "source_resolved": "Wand-032"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 4.503190994262695,
+    "t_retrieval": 0.016695022583007812,
+    "t_computation": 0.5989477634429932,
+    "t_response": 1.4007723331451416,
+    "total_time": 6.5209033489227295,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I013",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which spaces touch Wand-034 on 1. Obergeschoss?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-034",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "1. Obergeschoss"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-034",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "1. Obergeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 0,
+      "source_resolved": "Wand-034"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.658804416656494,
+    "t_retrieval": 0.010512590408325195,
+    "t_computation": 0.0,
+    "t_response": 1.4043464660644531,
+    "total_time": 5.075682163238525,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I014",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all walls on 2. Obergeschoss that touch Wand-036.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-036",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "2. Obergeschoss"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-036",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "2. Obergeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Wand-002",
+        "Wand-004",
+        "Wand-003"
+      ],
+      "total_candidates_checked": 28,
+      "source_resolved": "Wand-036"
+    },
+    "actual_result": {
+      "matches": [
+        "Wand-002",
+        "Wand-004",
+        "Wand-003"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.9798953533172607,
+    "t_retrieval": 0.005122661590576172,
+    "t_computation": 0.2665379047393799,
+    "t_response": 2.8892905712127686,
+    "total_time": 6.140846490859985,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I015",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Does Fenster-012 cover any slabs?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Fenster-012",
+        "type": "IfcWindow"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Fenster-012",
+        "type": "IfcWindow"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 26,
+      "source_resolved": "Fenster-012"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.8511903285980225,
+    "t_retrieval": 0.006504058837890625,
+    "t_computation": 0.14878511428833008,
+    "t_response": 2.1036152839660645,
+    "total_time": 6.135659217834473,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I016",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Tür-003 and Wand-008?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Tür-003",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Tür-003",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Tür-003",
+      "entity_b_resolved": "Wand-008"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.657116413116455,
+    "t_retrieval": 0.023445844650268555,
+    "t_computation": 0.0,
+    "t_response": 1.1003057956695557,
+    "total_time": 3.782895088195801,
+    "cache_hit": true,
+    "error": null
+  },
+  {
+    "query_id": "I017",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Does Treppe-EG touch Wand-017?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-017",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-017",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Treppe-EG",
+      "entity_b_resolved": "Wand-017"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.7516863346099854,
+    "t_retrieval": 0.0,
+    "t_computation": 0.025532245635986328,
+    "t_response": 1.265690803527832,
+    "total_time": 4.042909383773804,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I018",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me the spatial relationship between Gelaender-1-1 and Treppe-EG.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-1-1",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-1-1",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Gelaender-1-1",
+      "entity_b_resolved": "Treppe-EG"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.988309621810913,
+    "t_retrieval": 0.01091313362121582,
+    "t_computation": 0.3050992488861084,
+    "t_response": 1.3948421478271484,
+    "total_time": 4.6994757652282715,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I019",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Wand-029 and Wand-032?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-029",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-032",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-029",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-032",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wand-029",
+      "entity_b_resolved": "Wand-032"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.576097249984741,
+    "t_retrieval": 0.01364278793334961,
+    "t_computation": 0.008800745010375977,
+    "t_response": 1.687150239944458,
+    "total_time": 4.293910264968872,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I020",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is Tür-006 touching Wand-033?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Tür-006",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-033",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Tür-006",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-033",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Tür-006",
+      "entity_b_resolved": "Wand-033"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.162078619003296,
+    "t_retrieval": 0.009900569915771484,
+    "t_computation": 0.0,
+    "t_response": 1.140225887298584,
+    "total_time": 4.3168416023254395,
+    "cache_hit": true,
+    "error": null
+  },
+  {
+    "query_id": "I021",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Describe the relationship between Fenster-009 and Wand-017.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Fenster-009",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-017",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Fenster-009",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-017",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Fenster-009",
+      "entity_b_resolved": "Wand-017"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.297816276550293,
+    "t_retrieval": 0.007049083709716797,
+    "t_computation": 0.007509946823120117,
+    "t_response": 1.4743857383728027,
+    "total_time": 3.7867610454559326,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I022",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Tür-007 and Wand-008?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Tür-007",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Tür-007",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Tür-007",
+      "entity_b_resolved": "Wand-008"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.8036420345306396,
+    "t_retrieval": 0.02279496192932129,
+    "t_computation": 0.009563922882080078,
+    "t_response": 2.304905652999878,
+    "total_time": 6.140906572341919,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I023",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Does Gelaender-2-1 touch Treppe-1-OG?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-2-1",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-1-OG",
+        "type": "IfcStair"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-2-1",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-1-OG",
+        "type": "IfcStair"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Gelaender-2-1",
+      "entity_b_resolved": "Treppe-1-OG"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.7532894611358643,
+    "t_retrieval": 0.015882492065429688,
+    "t_computation": 0.3110358715057373,
+    "t_response": 1.735741138458252,
+    "total_time": 4.817928075790405,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I024",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me how Wand-034 relates to Treppe-KG.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-034",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-KG",
+        "type": "IfcStair"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-034",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-KG",
+        "type": "IfcStair"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wand-034",
+      "entity_b_resolved": "Treppe-KG"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.6974234580993652,
+    "t_retrieval": 0.010590791702270508,
+    "t_computation": 0.015488147735595703,
+    "t_response": 2.3631889820098877,
+    "total_time": 5.0877156257629395,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I025",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Gelaender-3-1 and Treppe-2-OG?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-3-1",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-2-OG",
+        "type": "IfcStair"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-3-1",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-2-OG",
+        "type": "IfcStair"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Gelaender-3-1",
+      "entity_b_resolved": "Treppe-2-OG"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.423344612121582,
+    "t_retrieval": 0.007796764373779297,
+    "t_computation": 0.30411243438720703,
+    "t_response": 1.5973405838012695,
+    "total_time": 4.3331193923950195,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I026",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is Wand-036 disjoint from Treppe-EG?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-036",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-036",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-EG",
+        "type": "IfcStair"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wand-036",
+      "entity_b_resolved": "Treppe-EG"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.705641508102417,
+    "t_retrieval": 0.014066934585571289,
+    "t_computation": 0.009189605712890625,
+    "t_response": 1.5656585693359375,
+    "total_time": 5.294556617736816,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I027",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me the relationship between Fenster-013 and Wand-035.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Fenster-013",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-035",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Fenster-013",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-035",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Fenster-013",
+      "entity_b_resolved": "Wand-035"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5921566486358643,
+    "t_retrieval": 0.014784574508666992,
+    "t_computation": 0.019034385681152344,
+    "t_response": 1.449997901916504,
+    "total_time": 4.080450057983398,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I028",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Gelaender-4-2 and Gelaender-4-3?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-4-2",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Gelaender-4-3",
+        "type": "IfcRailing"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Gelaender-4-2",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Gelaender-4-3",
+        "type": "IfcRailing"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Gelaender-4-2",
+      "entity_b_resolved": "Gelaender-4-3"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5667343139648438,
+    "t_retrieval": 0.015836477279663086,
+    "t_computation": 0.04101109504699707,
+    "t_response": 2.389009475708008,
+    "total_time": 5.017114162445068,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I029",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is Wand-037 disjoint from Treppe-KG?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-037",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-KG",
+        "type": "IfcStair"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-037",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Treppe-KG",
+        "type": "IfcStair"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wand-037",
+      "entity_b_resolved": "Treppe-KG"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.6558473110198975,
+    "t_retrieval": 0.002086162567138672,
+    "t_computation": 0.009272098541259766,
+    "t_response": 1.533867597579956,
+    "total_time": 4.202243804931641,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "I030",
+    "ifc_model": "Institute",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Describe the relationship between Wand-029 and Wand-008.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-029",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-029",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-008",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wand-029",
+      "entity_b_resolved": "Wand-008"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.937781810760498,
+    "t_retrieval": 0.007585048675537109,
+    "t_computation": 0.018293142318725586,
+    "t_response": 1.349851369857788,
+    "total_time": 4.315544366836548,
+    "cache_hit": false,
+    "error": null
+  }
+]
