@@ -1,0 +1,1639 @@
+[
+  {
+    "query_id": "D001",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which slabs cover Basic Wall:Foundation - Concrete (417mm):140479?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (417mm):140479",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (417mm):140479",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 21,
+      "source_resolved": "Basic Wall:Foundation - Concrete (417mm):140479"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 4.166834592819214,
+    "t_retrieval": 0.17218542098999023,
+    "t_computation": 1.2386438846588135,
+    "t_response": 1.5453128814697266,
+    "total_time": 7.125490188598633,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D002",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all doors that touch Basic Wall:Exterior - Brick on Block:138157.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:138157",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:138157",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596"
+      ],
+      "total_candidates_checked": 14,
+      "source_resolved": "Basic Wall:Exterior - Brick on Block:138157"
+    },
+    "actual_result": {
+      "matches": [
+        "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5698599815368652,
+    "t_retrieval": 0.019941091537475586,
+    "t_computation": 0.334092378616333,
+    "t_response": 4.063319444656372,
+    "total_time": 6.987212896347046,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D003",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Are there any windows disjoint from Floor:127mm Slab on Grade:141232?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788",
+        "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:146016",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:146885",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:147051",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:147686",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:147994",
+        "M_Casement:819mm x 759mm:819mm x 759mm:148607",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:148722",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:149278",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:149537",
+        "M_Casement:819mm x 759mm:819mm x 759mm:149736",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:149924",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:180318",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:180663",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:180864",
+        "M_Casement:819mm x 759mm:819mm x 759mm:180994",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:181096",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:181285",
+        "M_Casement:819mm x 759mm:819mm x 759mm:181548",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:181583",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:181930",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:182101",
+        "M_Skylight:1180 x 1170mm:1180 x 1170mm:185337",
+        "M_Skylight:1180 x 1170mm:1180 x 1170mm:185718"
+      ],
+      "total_candidates_checked": 24,
+      "source_resolved": "Floor:127mm Slab on Grade:141232"
+    },
+    "actual_result": {
+      "matches": [
+        "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788",
+        "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:146016",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:146885",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:147051",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:147686",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:147994",
+        "M_Casement:819mm x 759mm:819mm x 759mm:148607",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:148722",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:149278",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:149537",
+        "M_Casement:819mm x 759mm:819mm x 759mm:149736",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:149924",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:180318",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:180663",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:180864",
+        "M_Casement:819mm x 759mm:819mm x 759mm:180994",
+        "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:181096",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:181285",
+        "M_Casement:819mm x 759mm:819mm x 759mm:181548",
+        "M_Fixed:819mm x 759mm:819mm x 759mm:181583",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:181930",
+        "M_Fixed:750mm x 2200mm:750mm x 2200mm:182101",
+        "M_Skylight:1180 x 1170mm:1180 x 1170mm:185337",
+        "M_Skylight:1180 x 1170mm:1180 x 1170mm:185718"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 5.205255031585693,
+    "t_retrieval": 0.013357400894165039,
+    "t_computation": 0.46655988693237305,
+    "t_response": 7.03319787979126,
+    "total_time": 12.718847036361694,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D004",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which footings touch Basic Wall:Foundation - Concrete (435mm):140913?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcFooting",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (435mm):140913",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcFooting",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (435mm):140913",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Wall Foundation:Bearing Footing - 900 x 300:186596",
+        "Wall Foundation:Bearing Footing - 900 x 300:186632"
+      ],
+      "total_candidates_checked": 7,
+      "source_resolved": "Basic Wall:Foundation - Concrete (435mm):140913"
+    },
+    "actual_result": {
+      "matches": [
+        "Wall Foundation:Bearing Footing - 900 x 300:186596",
+        "Wall Foundation:Bearing Footing - 900 x 300:186632"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.0121910572052,
+    "t_retrieval": 0.0034317970275878906,
+    "t_computation": 0.21691322326660156,
+    "t_response": 3.7175374031066895,
+    "total_time": 5.951069593429565,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D005",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "Show me all walls on Level 1 that touch Floor:127mm Slab on Grade:141232.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      },
+      "storey_filter": "Level 1"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      },
+      "storey_filter": "Erdgeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Basic Wall:Interior - Partition (92mm Stud):138584",
+        "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139347",
+        "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139374",
+        "Basic Wall:Exterior - Brick on Block:138157",
+        "Basic Wall:Exterior - Brick on Block:138310",
+        "Basic Wall:Interior - Partition (92mm Stud):139143",
+        "Basic Wall:Exterior - Brick on Block:138062",
+        "Basic Wall:Interior - Furring (152 mm Stud):189074",
+        "Basic Wall:Interior - Furring (152 mm Stud):189901",
+        "Basic Wall:Interior - Partition (92mm Stud):190140"
+      ],
+      "total_candidates_checked": 21,
+      "source_resolved": "Floor:127mm Slab on Grade:141232"
+    },
+    "actual_result": null,
+    "end_to_end_correct": false,
+    "t_understanding": 3.2121238708496094,
+    "t_retrieval": 0.11963343620300293,
+    "t_computation": null,
+    "t_response": null,
+    "total_time": 3.3317573070526123,
+    "cache_hit": false,
+    "error": "Source element not found: Floor:127mm Slab on Grade:141232"
+  },
+  {
+    "query_id": "D006",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Is there any beam that touches Basic Wall:Exterior - Brick on Block:143410?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcBeam",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143410",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcBeam",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143410",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "M_W-Wide Flange:W310X60:W310X60:209260",
+        "M_W-Wide Flange:W410X60:W410X60:209261"
+      ],
+      "total_candidates_checked": 8,
+      "source_resolved": "Basic Wall:Exterior - Brick on Block:143410"
+    },
+    "actual_result": {
+      "matches": [
+        "M_W-Wide Flange:W310X60:W310X60:209260",
+        "M_W-Wide Flange:W410X60:W410X60:209261"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 4.65778112411499,
+    "t_retrieval": 0.0229036808013916,
+    "t_computation": 0.5757749080657959,
+    "t_response": 3.0355305671691895,
+    "total_time": 8.297574758529663,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D007",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which spaces are disjoint from Floor:Finish Floor - Wood:169093?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:Finish Floor - Wood:169093",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:Finish Floor - Wood:169093",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "A101",
+        "A201",
+        "B104",
+        "B101",
+        "B201",
+        "A205",
+        "B205",
+        "A105",
+        "B105",
+        "R301",
+        "B102",
+        "A102",
+        "A103",
+        "B103",
+        "B204",
+        "A204",
+        "A104",
+        "A202",
+        "B202",
+        "A203"
+      ],
+      "total_candidates_checked": 21,
+      "source_resolved": "Floor:Finish Floor - Wood:169093"
+    },
+    "actual_result": {
+      "matches": [
+        "A101",
+        "A201",
+        "B104",
+        "B101",
+        "B201",
+        "A205",
+        "B205",
+        "A105",
+        "B105",
+        "R301",
+        "B102",
+        "A102",
+        "A103",
+        "B103",
+        "B204",
+        "A204",
+        "A104",
+        "A202",
+        "B202",
+        "A203"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.0416460037231445,
+    "t_retrieval": 0.010849952697753906,
+    "t_computation": 0.2984004020690918,
+    "t_response": 5.808908462524414,
+    "total_time": 8.163341999053955,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D008",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all windows on Level 2 that touch Basic Wall:Interior - Furring (38 mm Stud):217414.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Furring (38 mm Stud):217414",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "Level 2"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Furring (38 mm Stud):217414",
+        "type": "IfcWall"
+      },
+      "storey_filter": "Level 2"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 18,
+      "source_resolved": "Basic Wall:Interior - Furring (38 mm Stud):217414"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.4152631759643555,
+    "t_retrieval": 0.06651735305786133,
+    "t_computation": 0.18135714530944824,
+    "t_response": 1.5209641456604004,
+    "total_time": 4.187197923660278,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D009",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Does Stair:Residential - 200mm Max Riser 250mm Tread:151086:1 touch any walls?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+        "type": "IfcMember"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+        "type": "IfcStair"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234",
+        "Basic Wall:Foundation - Concrete (417mm):140520",
+        "Basic Wall:Exterior - Brick on Block:138157",
+        "Basic Wall:Exterior - Brick on Block:143478"
+      ],
+      "total_candidates_checked": 56,
+      "source_resolved": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1"
+    },
+    "actual_result": {
+      "matches": [
+        "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234",
+        "Basic Wall:Foundation - Concrete (417mm):140520",
+        "Basic Wall:Exterior - Brick on Block:138157",
+        "Basic Wall:Exterior - Brick on Block:143478"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.3593649864196777,
+    "t_retrieval": 0.03609657287597656,
+    "t_computation": 0.6644065380096436,
+    "t_response": 4.979630947113037,
+    "total_time": 8.042056322097778,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D010",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which slabs cover Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 21,
+      "source_resolved": "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.526733160018921,
+    "t_retrieval": 0.007555723190307617,
+    "t_computation": 0.39344310760498047,
+    "t_response": 1.501098394393921,
+    "total_time": 5.42883038520813,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D011",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "Tell me all doors that touch Basic Wall:Interior - Partition (92mm Stud):138584.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):138584",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):138584",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 14,
+      "source_resolved": "Basic Wall:Interior - Partition (92mm Stud):138584"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.2635762691497803,
+    "t_retrieval": 0.006997346878051758,
+    "t_computation": 0.1736459732055664,
+    "t_response": 1.4853730201721191,
+    "total_time": 3.935692071914673,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D012",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Are there any railings touching Basic Roof:Live Roof over Wood Joist Flat Roof:184483?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcRailing",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Roof:Live Roof over Wood Joist Flat Roof:184483",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcRailing",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Roof:Live Roof over Wood Joist Flat Roof:184483",
+        "type": "IfcMember"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 4,
+      "source_resolved": "Basic Roof:Live Roof over Wood Joist Flat Roof:184483"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.6998305320739746,
+    "t_retrieval": 0.012024402618408203,
+    "t_computation": 0.0385136604309082,
+    "t_response": 1.5612752437591553,
+    "total_time": 5.312016010284424,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D013",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which windows touch Basic Wall:Exterior - Brick on Block:184944?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:184944",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "Roof"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:184944",
+        "type": "IfcWall"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 2,
+      "source_resolved": "Basic Wall:Exterior - Brick on Block:184944"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.233153820037842,
+    "t_retrieval": 0.028242111206054688,
+    "t_computation": 0.2164468765258789,
+    "t_response": 1.4529662132263184,
+    "total_time": 3.9354920387268066,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D014",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all walls on T/FDN that touch Wall Foundation:Bearing Footing - 900 x 300:186596.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Wall Foundation:Bearing Footing - 900 x 300:186596",
+        "type": "IfcFooting"
+      },
+      "storey_filter": "T/FDN"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Wall Foundation:Bearing Footing - 900 x 300:186596",
+        "type": "IfcFooting"
+      },
+      "storey_filter": "T/FDN"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Basic Wall:Foundation - Concrete (417mm):140479",
+        "Basic Wall:Foundation - Concrete (417mm):140520",
+        "Basic Wall:Foundation - Concrete (417mm):140554",
+        "Basic Wall:Foundation - Concrete (435mm):140913"
+      ],
+      "total_candidates_checked": 7,
+      "source_resolved": "Wall Foundation:Bearing Footing - 900 x 300:186596"
+    },
+    "actual_result": {
+      "matches": [
+        "Basic Wall:Foundation - Concrete (417mm):140479",
+        "Basic Wall:Foundation - Concrete (417mm):140520",
+        "Basic Wall:Foundation - Concrete (417mm):140554",
+        "Basic Wall:Foundation - Concrete (435mm):140913"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.4607059955596924,
+    "t_retrieval": 0.02980947494506836,
+    "t_computation": 0.19878172874450684,
+    "t_response": 6.096609592437744,
+    "total_time": 8.786413431167603,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D015",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Does Floor:Finish Floor - Ceramic Tile:169772 cover any walls?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:Finish Floor - Ceramic Tile:169772",
+        "type": "IfcSlab"
+      },
+      "storey_filter": "Level 2"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Floor:Finish Floor - Ceramic Tile:169772",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 24,
+      "source_resolved": "Floor:Finish Floor - Ceramic Tile:169772"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.302384614944458,
+    "t_retrieval": 0.01514434814453125,
+    "t_computation": 0.7090601921081543,
+    "t_response": 1.1002426147460938,
+    "total_time": 4.129319906234741,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D016",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Basic Wall:Foundation - Concrete (417mm):140479 and Wall Foundation:Bearing Footing - 900 x 300:186596?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (417mm):140479",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wall Foundation:Bearing Footing - 900 x 300:186596",
+        "type": "IfcFooting"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (417mm):140479",
+        "type": "IfcWall"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wall Foundation:Bearing Footing - 900 x 300:186596",
+        "type": "IfcFooting"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Basic Wall:Foundation - Concrete (417mm):140479",
+      "entity_b_resolved": "Wall Foundation:Bearing Footing - 900 x 300:186596"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.8195507526397705,
+    "t_retrieval": 0.00852060317993164,
+    "t_computation": 0.043845176696777344,
+    "t_response": 2.7605667114257812,
+    "total_time": 5.632990121841431,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D017",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Does Basic Wall:Exterior - Brick on Block:138157 touch Floor:127mm Slab on Grade:141232?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:138157",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:138157",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Basic Wall:Exterior - Brick on Block:138157",
+      "entity_b_resolved": "Floor:127mm Slab on Grade:141232"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.424733877182007,
+    "t_retrieval": 0.005513191223144531,
+    "t_computation": 0.03552079200744629,
+    "t_response": 1.3524086475372314,
+    "total_time": 3.8197379112243652,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D018",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me the spatial relationship between Stair:Residential - 200mm Max Riser 250mm Tread:151086:1 and Basic Wall:Interior - Partition (92mm Stud):138584.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+        "type": "IfcMember"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):138584",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+        "type": "IfcStair"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):138584",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+      "entity_b_resolved": "Basic Wall:Interior - Partition (92mm Stud):138584"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.9350693225860596,
+    "t_retrieval": 0.010025501251220703,
+    "t_computation": 0.0,
+    "t_response": 1.8335857391357422,
+    "total_time": 4.785054445266724,
+    "cache_hit": true,
+    "error": null
+  },
+  {
+    "query_id": "D019",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Basic Wall:Interior - Partition (92mm Stud):139783 and Basic Wall:Interior - Partition (92mm Stud):139939?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):139783",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):139939",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):139783",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Interior - Partition (92mm Stud):139939",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Basic Wall:Interior - Partition (92mm Stud):139783",
+      "entity_b_resolved": "Basic Wall:Interior - Partition (92mm Stud):139939"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.331941843032837,
+    "t_retrieval": 0.01244974136352539,
+    "t_computation": 0.017334461212158203,
+    "t_response": 2.711409330368042,
+    "total_time": 5.077172040939331,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D020",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596 touching Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596",
+      "entity_b_resolved": "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.154656410217285,
+    "t_retrieval": 0.009395360946655273,
+    "t_computation": 0.009996414184570312,
+    "t_response": 3.1236331462860107,
+    "total_time": 6.299219131469727,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D021",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Describe the relationship between M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788 and Basic Wall:Exterior - Brick on Block:138062.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:138062",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788",
+        "type": "IfcProduct"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:138062",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788",
+      "entity_b_resolved": "Basic Wall:Exterior - Brick on Block:138062"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.468026638031006,
+    "t_retrieval": 0.014449119567871094,
+    "t_computation": 0.09305953979492188,
+    "t_response": 2.9979960918426514,
+    "total_time": 5.57353138923645,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D022",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between M_W-Wide Flange:W310X60:W310X60:207325 and Basic Wall:Exterior - Brick on Block:143410?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_W-Wide Flange:W310X60:W310X60:207325",
+        "type": "IfcBeam"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143410",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_W-Wide Flange:W310X60:W310X60:207325",
+        "type": "IfcBeam"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143410",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "M_W-Wide Flange:W310X60:W310X60:207325",
+      "entity_b_resolved": "Basic Wall:Exterior - Brick on Block:143410"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5191802978515625,
+    "t_retrieval": 0.0070726871490478516,
+    "t_computation": 0.010878801345825195,
+    "t_response": 3.8048465251922607,
+    "total_time": 6.342495918273926,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D023",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Does Railing:900mm Handrail Only:151162 touch Stair:Residential - 200mm Max Riser 250mm Tread:151086:1?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Railing:900mm Handrail Only:151162",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+        "type": "IfcMember"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Railing:900mm Handrail Only:151162",
+        "type": "IfcRailing"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+        "type": "IfcStair"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Railing:900mm Handrail Only:151162",
+      "entity_b_resolved": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.679868698120117,
+    "t_retrieval": 0.007517337799072266,
+    "t_computation": 0.16647672653198242,
+    "t_response": 1.7610342502593994,
+    "total_time": 4.614897012710571,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D024",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me how Basic Wall:Exterior - Brick on Block:184944 relates to Basic Roof:Live Roof over Wood Joist Flat Roof:184483.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:184944",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Roof:Live Roof over Wood Joist Flat Roof:184483",
+        "type": "IfcSlab"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:184944",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Roof:Live Roof over Wood Joist Flat Roof:184483",
+        "type": "IfcSlab"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Basic Wall:Exterior - Brick on Block:184944",
+      "entity_b_resolved": "Basic Roof:Live Roof over Wood Joist Flat Roof:184483"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 3.5828142166137695,
+    "t_retrieval": 0.005514621734619141,
+    "t_computation": 0.04086899757385254,
+    "t_response": 3.01535701751709,
+    "total_time": 6.646063804626465,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D025",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Floor:127mm Slab on Grade:141232 and Wall Foundation:Bearing Footing - 900 x 300:186604?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wall Foundation:Bearing Footing - 900 x 300:186604",
+        "type": "IfcFooting"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wall Foundation:Bearing Footing - 900 x 300:186604",
+        "type": "IfcFooting"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Floor:127mm Slab on Grade:141232",
+      "entity_b_resolved": "Wall Foundation:Bearing Footing - 900 x 300:186604"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5426275730133057,
+    "t_retrieval": 0.0039026737213134766,
+    "t_computation": 0.014267206192016602,
+    "t_response": 2.266461133956909,
+    "total_time": 4.827258586883545,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D026",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is Basic Wall:Exterior - Brick on Block:143410 disjoint from Floor:127mm Slab on Grade:141232?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143410",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143410",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Floor:127mm Slab on Grade:141232",
+        "type": "IfcSlab"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Basic Wall:Exterior - Brick on Block:143410",
+      "entity_b_resolved": "Floor:127mm Slab on Grade:141232"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.3423004150390625,
+    "t_retrieval": 0.012667179107666016,
+    "t_computation": 0.010073661804199219,
+    "t_response": 2.5721139907836914,
+    "total_time": 4.937155246734619,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D027",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me the relationship between M_Skylight:1180 x 1170mm:1180 x 1170mm:185337 and Basic Wall:Exterior - Brick on Block:185014.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Skylight:1180 x 1170mm:1180 x 1170mm:185337",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:185014",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Skylight:1180 x 1170mm:1180 x 1170mm:185337",
+        "type": "IfcProduct"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:185014",
+        "type": "IfcWall"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "M_Skylight:1180 x 1170mm:1180 x 1170mm:185337",
+      "entity_b_resolved": "Basic Wall:Exterior - Brick on Block:185014"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.7795748710632324,
+    "t_retrieval": 0.0059986114501953125,
+    "t_computation": 0.020045995712280273,
+    "t_response": 1.7534236907958984,
+    "total_time": 4.562884330749512,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D028",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Floor:Finish Floor - Wood:169093 and Floor:Residential - Wood Joist with Subflooring:144800?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Floor:Finish Floor - Wood:169093",
+        "type": "IfcSlab"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Floor:Residential - Wood Joist with Subflooring:144800",
+        "type": "IfcSlab"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Floor:Finish Floor - Wood:169093",
+        "type": "IfcSlab"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Floor:Residential - Wood Joist with Subflooring:144800",
+        "type": "IfcSlab"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Floor:Finish Floor - Wood:169093",
+      "entity_b_resolved": "Floor:Residential - Wood Joist with Subflooring:144800"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.5777993202209473,
+    "t_retrieval": 0.012050867080688477,
+    "t_computation": 0.05348610877990723,
+    "t_response": 1.3354220390319824,
+    "total_time": 3.9832844734191895,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D029",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is M_Casement:819mm x 759mm:819mm x 759mm:148607 disjoint from Basic Wall:Foundation - Concrete (435mm):140913?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Casement:819mm x 759mm:819mm x 759mm:148607",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (435mm):140913",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_Casement:819mm x 759mm:819mm x 759mm:148607",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Foundation - Concrete (435mm):140913",
+        "type": "IfcWall"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "M_Casement:819mm x 759mm:819mm x 759mm:148607",
+      "entity_b_resolved": "Basic Wall:Foundation - Concrete (435mm):140913"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 4.739344120025635,
+    "t_retrieval": 0.0061969757080078125,
+    "t_computation": 0.02053999900817871,
+    "t_response": 2.9231386184692383,
+    "total_time": 7.68921971321106,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "D030",
+    "ifc_model": "Duplex",
+    "llm_model": "gpt-4",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Describe the relationship between M_W-Wide Flange:W410X60:W410X60:209121 and Basic Wall:Exterior - Brick on Block:143478.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_W-Wide Flange:W410X60:W410X60:209121",
+        "type": "IfcBeam"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143478",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "M_W-Wide Flange:W410X60:W410X60:209121",
+        "type": "IfcBeam"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Basic Wall:Exterior - Brick on Block:143478",
+        "type": "IfcWall"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "M_W-Wide Flange:W410X60:W410X60:209121",
+      "entity_b_resolved": "Basic Wall:Exterior - Brick on Block:143478"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 2.4447154998779297,
+    "t_retrieval": 0.007183074951171875,
+    "t_computation": 0.01685929298400879,
+    "t_response": 1.9703600406646729,
+    "total_time": 4.439117908477783,
+    "cache_hit": false,
+    "error": null
+  }
+]
