@@ -1,0 +1,137 @@
+section,metric,value,percent,notes
+Graph Construction,House elements,89,,
+Graph Construction,House vertices,11196,,
+Graph Construction,House faces,21726,,
+Graph Construction,House edges,32581,,
+Graph Construction,House relations,65592,,
+Graph Construction,House build_time,10.99,,
+Graph Construction,Duplex elements,159,,
+Graph Construction,Duplex vertices,5630,,
+Graph Construction,Duplex faces,10028,,
+Graph Construction,Duplex edges,15168,,
+Graph Construction,Duplex relations,30985,,
+Graph Construction,Duplex build_time,11.32,,
+Graph Construction,Institute elements,530,,
+Graph Construction,Institute vertices,22774,,
+Graph Construction,Institute faces,40800,,
+Graph Construction,Institute edges,62078,,
+Graph Construction,Institute relations,126182,,
+Graph Construction,Institute build_time,33.67,,
+Query Dataset,House total,30,,
+Query Dataset,House element,15,,
+Query Dataset,House relationship,15,,
+Query Dataset,House storey_filtered,3,,
+Query Dataset,Duplex total,30,,
+Query Dataset,Duplex element,15,,
+Query Dataset,Duplex relationship,15,,
+Query Dataset,Duplex storey_filtered,5,,
+Query Dataset,Institute total,30,,
+Query Dataset,Institute element,15,,
+Query Dataset,Institute relationship,15,,
+Query Dataset,Institute storey_filtered,9,,
+Query Dataset,Pattern - general_question,30,33.30%,across all 3 models
+Query Dataset,Pattern - imperative,30,33.30%,across all 3 models
+Query Dataset,Pattern - fact_verification,30,33.30%,across all 3 models
+Understanding Accuracy,Overall,90/90,100.00%,"GPT-4 cold runs, 90 queries"
+Understanding Accuracy,Pattern - general_question,30/30,100.00%,GPT-4
+Understanding Accuracy,Pattern - imperative,30/30,100.00%,GPT-4
+Understanding Accuracy,Pattern - fact_verification,30/30,100.00%,GPT-4
+Understanding Accuracy,Model - House,30/30,100.00%,GPT-4
+Understanding Accuracy,Model - Duplex,30/30,100.00%,GPT-4
+Understanding Accuracy,Model - Institute,30/30,100.00%,GPT-4
+End-to-End Accuracy,Overall,89/90,98.90%,"GPT-4 cold runs, 90 queries"
+End-to-End Accuracy,Model - House,30/30,100.00%,GPT-4
+End-to-End Accuracy,Model - Duplex,29/30,96.70%,GPT-4
+End-to-End Accuracy,Model - Institute,30/30,100.00%,GPT-4
+End-to-End Accuracy,Query Type - element,44/45,97.80%,GPT-4
+End-to-End Accuracy,Query Type - relationship,45/45,100.00%,GPT-4
+End-to-End Accuracy,Pattern - general_question,30/30,100.00%,GPT-4
+End-to-End Accuracy,Pattern - imperative,29/30,96.70%,GPT-4
+End-to-End Accuracy,Pattern - fact_verification,30/30,100.00%,GPT-4
+End-to-End Accuracy,House x element,15/15,100.00%,GPT-4
+End-to-End Accuracy,House x relationship,15/15,100.00%,GPT-4
+End-to-End Accuracy,Duplex x element,14/15,93.30%,GPT-4
+End-to-End Accuracy,Duplex x relationship,15/15,100.00%,GPT-4
+End-to-End Accuracy,Institute x element,15/15,100.00%,GPT-4
+End-to-End Accuracy,Institute x relationship,15/15,100.00%,GPT-4
+Per-Agent Timing,Cold Avg - Understanding Agent,2.976s,,"GPT-4, 90 queries"
+Per-Agent Timing,Cold Avg - Retrieval Agent,0.018s,,"GPT-4, 90 queries"
+Per-Agent Timing,Cold Avg - Computation Agent,0.540s,,"GPT-4, 90 queries"
+Per-Agent Timing,Cold Avg - Response Agent,2.373s,,"GPT-4, 90 queries"
+Per-Agent Timing,Cold Avg - Total,5.878s,,"GPT-4, 90 queries"
+Per-Agent Timing,House - t_understanding,2.992s,,GPT-4 cold run avg
+Per-Agent Timing,House - t_retrieval,0.009s,,GPT-4 cold run avg
+Per-Agent Timing,House - t_computation,0.280s,,GPT-4 cold run avg
+Per-Agent Timing,House - t_response,2.571s,,GPT-4 cold run avg
+Per-Agent Timing,House - total_time,5.854s,,GPT-4 cold run avg
+Per-Agent Timing,Duplex - t_understanding,2.916s,,GPT-4 cold run avg
+Per-Agent Timing,Duplex - t_retrieval,0.023s,,GPT-4 cold run avg
+Per-Agent Timing,Duplex - t_computation,0.216s,,GPT-4 cold run avg
+Per-Agent Timing,Duplex - t_response,2.796s,,GPT-4 cold run avg
+Per-Agent Timing,Duplex - total_time,5.852s,,GPT-4 cold run avg
+Per-Agent Timing,Institute - t_understanding,3.021s,,GPT-4 cold run avg
+Per-Agent Timing,Institute - t_retrieval,0.022s,,GPT-4 cold run avg
+Per-Agent Timing,Institute - t_computation,1.115s,,GPT-4 cold run avg
+Per-Agent Timing,Institute - t_response,1.766s,,GPT-4 cold run avg
+Per-Agent Timing,Institute - total_time,5.928s,,GPT-4 cold run avg
+Caching Ablation,House - Cold Total Time,5.854,,GPT-4. Hits: cold 3/30 warm 15/30
+Caching Ablation,House - Warm Total Time,5.263,,GPT-4. Hits: cold 3/30 warm 15/30
+Caching Ablation,House - Speedup,1.112,,GPT-4. Hits: cold 3/30 warm 15/30
+Caching Ablation,Duplex - Cold Total Time,5.852,,GPT-4. Hits: cold 1/30 warm 15/30
+Caching Ablation,Duplex - Warm Total Time,6.003,,GPT-4. Hits: cold 1/30 warm 15/30
+Caching Ablation,Duplex - Speedup,0.975,,GPT-4. Hits: cold 1/30 warm 15/30
+Caching Ablation,Institute - Cold Total Time,5.928,,GPT-4. Hits: cold 2/30 warm 15/30
+Caching Ablation,Institute - Warm Total Time,4.668,,GPT-4. Hits: cold 2/30 warm 15/30
+Caching Ablation,Institute - Speedup,1.27,,GPT-4. Hits: cold 2/30 warm 15/30
+Caching Ablation,Cold vs Warm - Understanding Agent,cold 2.976s warm 2.900s,,GPT-4. saving 0.076s
+Caching Ablation,Cold vs Warm - Retrieval Agent,cold 0.018s warm 0.009s,,GPT-4. saving 0.009s
+Caching Ablation,Cold vs Warm - Computation Agent,cold 0.540s warm 0.040s,,GPT-4. saving 0.500s
+Caching Ablation,Cold vs Warm - Response Agent,cold 2.373s warm 2.387s,,GPT-4. saving -0.014s
+Caching Ablation,Cold vs Warm - Total,cold 5.878s warm 5.311s,,GPT-4. saving 0.567s
+Ground Truth Distribution,Predicate - DISJOINT,34,75.60%,relationship queries only
+Ground Truth Distribution,Predicate - HAS_MATCHES,23,51.10%,relationship queries only
+Ground Truth Distribution,Predicate - NO_MATCH,22,48.90%,relationship queries only
+Ground Truth Distribution,Predicate - TOUCHES,11,24.40%,relationship queries only
+Failed Queries,D005,Source element not found: Floor:127mm Slab on Grade:141232,,GPT-4. Show me all walls on Level 1 that touch Floor:127mm Slab on Grade:141232.
+Cross-Model Understanding,LLM - gpt-4,90/90,100.00%,"cold, 90 queries"
+Cross-Model Understanding,LLM - llama-3.3-70b,88/90,97.80%,"cold, 90 queries"
+Cross-Model Understanding,LLM - mistral-small,83/90,92.20%,"cold, 90 queries"
+Cross-Model Understanding,gpt-4 x House,30/30,100.00%,
+Cross-Model Understanding,gpt-4 x Duplex,30/30,100.00%,
+Cross-Model Understanding,gpt-4 x Institute,30/30,100.00%,
+Cross-Model Understanding,llama-3.3-70b x House,30/30,100.00%,
+Cross-Model Understanding,llama-3.3-70b x Duplex,28/30,93.30%,
+Cross-Model Understanding,llama-3.3-70b x Institute,30/30,100.00%,
+Cross-Model Understanding,mistral-small x House,29/30,96.70%,
+Cross-Model Understanding,mistral-small x Duplex,24/30,80.00%,
+Cross-Model Understanding,mistral-small x Institute,30/30,100.00%,
+Cross-Model End-to-End,LLM - gpt-4,89/90,98.90%,"cold, 90 queries"
+Cross-Model End-to-End,LLM - llama-3.3-70b,87/90,96.70%,"cold, 90 queries"
+Cross-Model End-to-End,LLM - mistral-small,81/90,90.00%,"cold, 90 queries"
+Cross-Model End-to-End,gpt-4 x House,30/30,100.00%,
+Cross-Model End-to-End,gpt-4 x Duplex,29/30,96.70%,
+Cross-Model End-to-End,gpt-4 x Institute,30/30,100.00%,
+Cross-Model End-to-End,llama-3.3-70b x House,30/30,100.00%,
+Cross-Model End-to-End,llama-3.3-70b x Duplex,27/30,90.00%,
+Cross-Model End-to-End,llama-3.3-70b x Institute,30/30,100.00%,
+Cross-Model End-to-End,mistral-small x House,29/30,96.70%,
+Cross-Model End-to-End,mistral-small x Duplex,23/30,76.70%,
+Cross-Model End-to-End,mistral-small x Institute,29/30,96.70%,
+Cross-Model Timing,gpt-4 - t_understanding,2.976s,,cold run avg
+Cross-Model Timing,gpt-4 - t_retrieval,0.018s,,cold run avg
+Cross-Model Timing,gpt-4 - t_computation,0.540s,,cold run avg
+Cross-Model Timing,gpt-4 - t_response,2.373s,,cold run avg
+Cross-Model Timing,gpt-4 - total_time,5.878s,,cold run avg
+Cross-Model Timing,llama-3.3-70b - t_understanding,0.576s,,cold run avg
+Cross-Model Timing,llama-3.3-70b - t_retrieval,0.008s,,cold run avg
+Cross-Model Timing,llama-3.3-70b - t_computation,0.480s,,cold run avg
+Cross-Model Timing,llama-3.3-70b - t_response,0.507s,,cold run avg
+Cross-Model Timing,llama-3.3-70b - total_time,1.539s,,cold run avg
+Cross-Model Timing,mistral-small - t_understanding,1.003s,,cold run avg
+Cross-Model Timing,mistral-small - t_retrieval,0.010s,,cold run avg
+Cross-Model Timing,mistral-small - t_computation,0.486s,,cold run avg
+Cross-Model Timing,mistral-small - t_response,0.956s,,cold run avg
+Cross-Model Timing,mistral-small - total_time,2.329s,,cold run avg
+Cross-Model Errors,LLM - gpt-4,Jan-90,1.10%,includes JSON parse failures and pipeline errors
+Cross-Model Errors,LLM - llama-3.3-70b,Mar-90,3.30%,includes JSON parse failures and pipeline errors
+Cross-Model Errors,LLM - mistral-small,Aug-90,8.90%,includes JSON parse failures and pipeline errors
