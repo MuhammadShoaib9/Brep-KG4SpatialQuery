@@ -1,0 +1,1665 @@
+[
+  {
+    "query_id": "H001",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which walls touch Bodenplatte?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Wand-Int-ERDG-4",
+        "Wand-Int-ERDG-2",
+        "Wand-Int-ERDG-1",
+        "Wand-Int-ERDG-3",
+        "Wand-Int-ERDG-5",
+        "Wand-Ext-ERDG-1",
+        "Wand-Ext-ERDG-4",
+        "Wand-Ext-ERDG-3",
+        "Wand-Ext-ERDG-2"
+      ],
+      "total_candidates_checked": 13,
+      "source_resolved": "Bodenplatte"
+    },
+    "actual_result": {
+      "matches": [
+        "Wand-Int-ERDG-4",
+        "Wand-Int-ERDG-2",
+        "Wand-Int-ERDG-1",
+        "Wand-Int-ERDG-3",
+        "Wand-Int-ERDG-5",
+        "Wand-Ext-ERDG-1",
+        "Wand-Ext-ERDG-4",
+        "Wand-Ext-ERDG-3",
+        "Wand-Ext-ERDG-2"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 1.5028748512268066,
+    "t_retrieval": 0.0075452327728271484,
+    "t_computation": 0.4185445308685303,
+    "t_response": 1.5002176761627197,
+    "total_time": 3.429182291030884,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H002",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all slabs that cover Wand-Int-ERDG-4.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-4",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-4",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 4,
+      "source_resolved": "Wand-Int-ERDG-4"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9524569511413574,
+    "t_retrieval": 0.0047245025634765625,
+    "t_computation": 0.0689840316772461,
+    "t_response": 0.7320189476013184,
+    "total_time": 1.7630727291107178,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H003",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Are there any windows disjoint from Wand-Ext-OG-1?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "EG-Fenster-8",
+        "EG-Fenster-9",
+        "EG-Fenster-1",
+        "EG-Fenster-2",
+        "EG-Fenster-3",
+        "OG-Fenster-1",
+        "EG-Fenster-6",
+        "EG-Fenster-7",
+        "EG-Fenster-4",
+        "EG-Fenster-5"
+      ],
+      "total_candidates_checked": 11,
+      "source_resolved": "Wand-Ext-OG-1"
+    },
+    "actual_result": {
+      "matches": [
+        "EG-Fenster-8",
+        "EG-Fenster-9",
+        "EG-Fenster-1",
+        "EG-Fenster-2",
+        "EG-Fenster-3",
+        "OG-Fenster-1",
+        "EG-Fenster-6",
+        "EG-Fenster-7",
+        "EG-Fenster-4",
+        "EG-Fenster-5"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 1.0988218784332275,
+    "t_retrieval": 0.005015373229980469,
+    "t_computation": 4.6935131549835205,
+    "t_response": 1.7801942825317383,
+    "total_time": 7.577544689178467,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H004",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which doors touch Wand-Int-ERDG-1?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 5,
+      "source_resolved": "Wand-Int-ERDG-1"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9276440143585205,
+    "t_retrieval": 0.009840250015258789,
+    "t_computation": 0.11239147186279297,
+    "t_response": 0.7612106800079346,
+    "total_time": 1.8110864162445068,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H005",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "Show me all walls on Erdgeschoss that touch Bodenplatte.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      },
+      "storey_filter": "Erdgeschoss"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      },
+      "storey_filter": "Erdgeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Wand-Int-ERDG-4",
+        "Wand-Int-ERDG-2",
+        "Wand-Int-ERDG-1",
+        "Wand-Int-ERDG-3",
+        "Wand-Int-ERDG-5",
+        "Wand-Ext-ERDG-1",
+        "Wand-Ext-ERDG-4",
+        "Wand-Ext-ERDG-3",
+        "Wand-Ext-ERDG-2"
+      ],
+      "total_candidates_checked": 9,
+      "source_resolved": "Bodenplatte"
+    },
+    "actual_result": {
+      "matches": [
+        "Wand-Int-ERDG-4",
+        "Wand-Int-ERDG-2",
+        "Wand-Int-ERDG-1",
+        "Wand-Int-ERDG-3",
+        "Wand-Int-ERDG-5",
+        "Wand-Ext-ERDG-1",
+        "Wand-Ext-ERDG-4",
+        "Wand-Ext-ERDG-3",
+        "Wand-Ext-ERDG-2"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9242086410522461,
+    "t_retrieval": 0.03787803649902344,
+    "t_computation": 0.020233869552612305,
+    "t_response": 1.4427874088287354,
+    "total_time": 2.425618886947632,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H006",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Is there any beam that touches First?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcBeam",
+      "source": {
+        "identifier": "name",
+        "value": "First",
+        "type": "IfcBeam"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcBeam",
+      "source": {
+        "identifier": "name",
+        "value": "First",
+        "type": "IfcSlab"
+      },
+      "storey_filter": "Erdgeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 3,
+      "source_resolved": "First"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8660051822662354,
+    "t_retrieval": 0.014842033386230469,
+    "t_computation": 0.019041776657104492,
+    "t_response": 0.6953024864196777,
+    "total_time": 1.5970735549926758,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H007",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which members are disjoint from Bodenplatte?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcMember",
+      "source": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcMember",
+      "source": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Sparren-1",
+        "Sparren-2",
+        "Sparren-3",
+        "Sparren-4",
+        "Sparren-5",
+        "Sparren-6",
+        "Sparren-7",
+        "Sparren-8",
+        "Sparren-9",
+        "Sparren-10",
+        "Sparren-11",
+        "Sparren-12",
+        "Sparren-13",
+        "Sparren-14",
+        "Sparren-15",
+        "Sparren-16",
+        "Sparren-17",
+        "Sparren-18",
+        "Sparren-19",
+        "Sparren-20",
+        "Sparren-21",
+        "Sparren-22",
+        "Sparren-23",
+        "Sparren-24",
+        "Sparren-25",
+        "Sparren-26",
+        "Sparren-27",
+        "Sparren-28",
+        "Sparren-29",
+        "Sparren-30",
+        "Sparren-31",
+        "Sparren-32",
+        "Sparren-33",
+        "Sparren-34",
+        "Sparren-35",
+        "Sparren-36",
+        "Sparren-37",
+        "Sparren-38",
+        "Sparren-39",
+        "Sparren-40",
+        "Sparren-41",
+        "Sparren-42"
+      ],
+      "total_candidates_checked": 42,
+      "source_resolved": "Bodenplatte"
+    },
+    "actual_result": {
+      "matches": [
+        "Sparren-1",
+        "Sparren-2",
+        "Sparren-3",
+        "Sparren-4",
+        "Sparren-5",
+        "Sparren-6",
+        "Sparren-7",
+        "Sparren-8",
+        "Sparren-9",
+        "Sparren-10",
+        "Sparren-11",
+        "Sparren-12",
+        "Sparren-13",
+        "Sparren-14",
+        "Sparren-15",
+        "Sparren-16",
+        "Sparren-17",
+        "Sparren-18",
+        "Sparren-19",
+        "Sparren-20",
+        "Sparren-21",
+        "Sparren-22",
+        "Sparren-23",
+        "Sparren-24",
+        "Sparren-25",
+        "Sparren-26",
+        "Sparren-27",
+        "Sparren-28",
+        "Sparren-29",
+        "Sparren-30",
+        "Sparren-31",
+        "Sparren-32",
+        "Sparren-33",
+        "Sparren-34",
+        "Sparren-35",
+        "Sparren-36",
+        "Sparren-37",
+        "Sparren-38",
+        "Sparren-39",
+        "Sparren-40",
+        "Sparren-41",
+        "Sparren-42"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8430488109588623,
+    "t_retrieval": 0.005261898040771484,
+    "t_computation": 0.31289219856262207,
+    "t_response": 1.0543723106384277,
+    "total_time": 2.2155752182006836,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H008",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all windows on Dachgeschoss that touch Wand-Ext-OG-2.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-2",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "Dachgeschoss"
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-2",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": "Dachgeschoss"
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 2,
+      "source_resolved": "Wand-Ext-OG-2"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8868837356567383,
+    "t_retrieval": 0.004898786544799805,
+    "t_computation": 0.024415016174316406,
+    "t_response": 0.6363584995269775,
+    "total_time": 1.5562915802001953,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H009",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Does Wendeltreppe touch any walls?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Wendeltreppe",
+        "type": "IfcStair"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Wendeltreppe",
+        "type": "IfcStair"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 13,
+      "source_resolved": "Wendeltreppe"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9913661479949951,
+    "t_retrieval": 0.002614259719848633,
+    "t_computation": 0.10715460777282715,
+    "t_response": 0.7811124324798584,
+    "total_time": 1.885331630706787,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H010",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which slabs cover Wand-Ext-ERDG-2?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-2",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcSlab",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-2",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 4,
+      "source_resolved": "Wand-Ext-ERDG-2"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8944590091705322,
+    "t_retrieval": 0.009376049041748047,
+    "t_computation": 0.10790014266967773,
+    "t_response": 0.8473131656646729,
+    "total_time": 1.8590483665466309,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H011",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "Tell me all doors that touch Wand-Ext-ERDG-1.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcDoor",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "Haustuer"
+      ],
+      "total_candidates_checked": 5,
+      "source_resolved": "Wand-Ext-ERDG-1"
+    },
+    "actual_result": {
+      "matches": [
+        "Haustuer"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9644184112548828,
+    "t_retrieval": 0.012098073959350586,
+    "t_computation": 0.27307558059692383,
+    "t_response": 0.7598779201507568,
+    "total_time": 2.0149013996124268,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H012",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Are there any railings touching Dach-1?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcRailing",
+      "source": {
+        "identifier": "name",
+        "value": "Dach-1",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcRailing",
+      "source": {
+        "identifier": "name",
+        "value": "Dach-1",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 2,
+      "source_resolved": "Dach-1"
+    },
+    "actual_result": {
+      "matches": []
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.849785566329956,
+    "t_retrieval": 0.014978885650634766,
+    "t_computation": 0.02825641632080078,
+    "t_response": 0.716141939163208,
+    "total_time": 1.6133453845977783,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H013",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "general_question",
+    "query_text": "Which spaces are disjoint from Dach-2?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Dach-2",
+        "type": "IfcSlab"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "DISJOINT",
+      "target_type": "IfcSpace",
+      "source": {
+        "identifier": "name",
+        "value": "Dach-2",
+        "type": "IfcSpace"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "4",
+        "3",
+        "2",
+        "5",
+        "1",
+        "6"
+      ],
+      "total_candidates_checked": 7,
+      "source_resolved": "Dach-2"
+    },
+    "actual_result": {
+      "matches": [
+        "4",
+        "3",
+        "2",
+        "5",
+        "1",
+        "6"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8176319599151611,
+    "t_retrieval": 0.005196094512939453,
+    "t_computation": 0.07122635841369629,
+    "t_response": 0.9739360809326172,
+    "total_time": 1.867990493774414,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H014",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "imperative",
+    "query_text": "List all windows that touch Wand-Ext-ERDG-3.",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-3",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "actual_command": {
+      "query_type": "element",
+      "predicate": "TOUCHES",
+      "target_type": "IfcWindow",
+      "source": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-3",
+        "type": "IfcWallStandardCase"
+      },
+      "storey_filter": null
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "matches": [
+        "EG-Fenster-8",
+        "EG-Fenster-9"
+      ],
+      "total_candidates_checked": 11,
+      "source_resolved": "Wand-Ext-ERDG-3"
+    },
+    "actual_result": {
+      "matches": [
+        "EG-Fenster-8",
+        "EG-Fenster-9"
+      ]
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 1.0107042789459229,
+    "t_retrieval": 0.0071201324462890625,
+    "t_computation": 0.23345589637756348,
+    "t_response": 0.9455199241638184,
+    "total_time": 2.2008471488952637,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H015",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "element",
+    "pattern": "fact_verification",
+    "query_text": "Does Slab-033 cover any walls on Dachgeschoss?",
+    "expected_command": {
+      "query_type": "element",
+      "predicate": "COVERS",
+      "target_type": "IfcWallStandardCase",
+      "source": {
+        "identifier": "name",
+        "value": "Slab-033",
+        "type": "IfcSlab"
+      },
+      "storey_filter": "Dachgeschoss"
+    },
+    "actual_command": {
+      "query_type": "error",
+      "message": "Failed to parse query"
+    },
+    "understanding_correct": false,
+    "expected_result": {
+      "matches": [],
+      "total_candidates_checked": 4,
+      "source_resolved": "Slab-033"
+    },
+    "actual_result": null,
+    "end_to_end_correct": false,
+    "t_understanding": 0.9033958911895752,
+    "t_retrieval": null,
+    "t_computation": null,
+    "t_response": null,
+    "total_time": 0.9033958911895752,
+    "cache_hit": false,
+    "error": "Failed to parse query"
+  },
+  {
+    "query_id": "H016",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Wand-Int-ERDG-4 and Bodenplatte?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-4",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-4",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Wand-Int-ERDG-4",
+      "entity_b_resolved": "Bodenplatte"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8311455249786377,
+    "t_retrieval": 0.03368043899536133,
+    "t_computation": 0.0,
+    "t_response": 0.8211865425109863,
+    "total_time": 1.6860125064849854,
+    "cache_hit": true,
+    "error": null
+  },
+  {
+    "query_id": "H017",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Does Wand-Ext-ERDG-1 touch Bodenplatte?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Wand-Ext-ERDG-1",
+      "entity_b_resolved": "Bodenplatte"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8680617809295654,
+    "t_retrieval": 0.0049474239349365234,
+    "t_computation": 0.0418856143951416,
+    "t_response": 1.483628749847412,
+    "total_time": 2.3985235691070557,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H018",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me the spatial relationship between Wendeltreppe and Wand-Ext-ERDG-4.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wendeltreppe",
+        "type": "IfcStair"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-4",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wendeltreppe",
+        "type": "IfcStair"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-4",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wendeltreppe",
+      "entity_b_resolved": "Wand-Ext-ERDG-4"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.757204532623291,
+    "t_retrieval": 0.007078647613525391,
+    "t_computation": 0.0,
+    "t_response": 1.160649061203003,
+    "total_time": 1.927945613861084,
+    "cache_hit": true,
+    "error": null
+  },
+  {
+    "query_id": "H019",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Wand-Int-ERDG-2 and Wand-Int-ERDG-1?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-2",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-2",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wand-Int-ERDG-2",
+      "entity_b_resolved": "Wand-Int-ERDG-1"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8648557662963867,
+    "t_retrieval": 0.006997823715209961,
+    "t_computation": 0.01852893829345703,
+    "t_response": 0.695218563079834,
+    "total_time": 1.5871131420135498,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H020",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is Innentuer-1 touching Wand-Int-ERDG-3?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Innentuer-1",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-3",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Innentuer-1",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-3",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Innentuer-1",
+      "entity_b_resolved": "Wand-Int-ERDG-3"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 1.912156343460083,
+    "t_retrieval": 0.007292509078979492,
+    "t_computation": 0.007398366928100586,
+    "t_response": 0.6785798072814941,
+    "total_time": 2.610459089279175,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H021",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Describe the relationship between EG-Fenster-1 and Wand-Ext-ERDG-2.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "EG-Fenster-1",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-2",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "EG-Fenster-1",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-2",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "EG-Fenster-1",
+      "entity_b_resolved": "Wand-Ext-ERDG-2"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 1.092106819152832,
+    "t_retrieval": 0.008641481399536133,
+    "t_computation": 0.07932615280151367,
+    "t_response": 0.7831575870513916,
+    "total_time": 1.9698677062988281,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H022",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between Haustuer and Wand-Ext-ERDG-3?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Haustuer",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-3",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Haustuer",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-3",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Haustuer",
+      "entity_b_resolved": "Wand-Ext-ERDG-3"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 1.0709362030029297,
+    "t_retrieval": 0.017064809799194336,
+    "t_computation": 0.023554563522338867,
+    "t_response": 0.7798357009887695,
+    "total_time": 1.8948850631713867,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H023",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Does Terrassentuer touch Wand-Ext-ERDG-4?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Terrassentuer",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-4",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Terrassentuer",
+        "type": "IfcDoor"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-ERDG-4",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Terrassentuer",
+      "entity_b_resolved": "Wand-Ext-ERDG-4"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9300460815429688,
+    "t_retrieval": 0.010401010513305664,
+    "t_computation": 0.33898448944091797,
+    "t_response": 0.8267862796783447,
+    "total_time": 2.10787034034729,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H024",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me how Sparren-1 relates to Wand-Ext-OG-1.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Sparren-1",
+        "type": "IfcMember"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Sparren-1",
+        "type": "IfcMember"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Sparren-1",
+      "entity_b_resolved": "Wand-Ext-OG-1"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.954291582107544,
+    "t_retrieval": 0.01959085464477539,
+    "t_computation": 0.018046855926513672,
+    "t_response": 0.9568588733673096,
+    "total_time": 1.9497871398925781,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H025",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between First and Pfette-1-1?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "First",
+        "type": "IfcBeam"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Pfette-1-1",
+        "type": "IfcBeam"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "First",
+        "type": "IfcSpace"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Pfette-1-1",
+        "type": "IfcMember"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "First",
+      "entity_b_resolved": "Pfette-1-1"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.991976261138916,
+    "t_retrieval": 0.0047719478607177734,
+    "t_computation": 0.017064571380615234,
+    "t_response": 0.8988139629364014,
+    "total_time": 1.9126267433166504,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H026",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Does Dach-1 touch Wand-Ext-OG-1?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Dach-1",
+        "type": "IfcSlab"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Dach-1",
+        "type": "IfcSlab"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "TOUCHES",
+      "entity_a_resolved": "Dach-1",
+      "entity_b_resolved": "Wand-Ext-OG-1"
+    },
+    "actual_result": {
+      "relationship": "TOUCHES"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 1.0091102123260498,
+    "t_retrieval": 0.004256725311279297,
+    "t_computation": 0.2774834632873535,
+    "t_response": 0.6557986736297607,
+    "total_time": 1.9486539363861084,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H027",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Tell me the relationship between Wand-Ext-OG-1 and Bodenplatte.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-1",
+        "type": "IfcWallStandardCase"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Bodenplatte",
+        "type": "IfcSlab"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Wand-Ext-OG-1",
+      "entity_b_resolved": "Bodenplatte"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.7965714931488037,
+    "t_retrieval": 0.01002192497253418,
+    "t_computation": 0.017243623733520508,
+    "t_response": 0.768604040145874,
+    "total_time": 1.6013414859771729,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H028",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "general_question",
+    "query_text": "What is the relationship between OG-Fenster-1 and Wand-Int-ERDG-1?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "OG-Fenster-1",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "OG-Fenster-1",
+        "type": "IfcWindow"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-1",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "OG-Fenster-1",
+      "entity_b_resolved": "Wand-Int-ERDG-1"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9444968700408936,
+    "t_retrieval": 0.0049321651458740234,
+    "t_computation": 0.01693248748779297,
+    "t_response": 0.7672646045684814,
+    "total_time": 1.7404484748840332,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H029",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "fact_verification",
+    "query_text": "Is Sparren-20 disjoint from Wand-Int-ERDG-5?",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Sparren-20",
+        "type": "IfcMember"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-5",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Sparren-20",
+        "type": "IfcMember"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Int-ERDG-5",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Sparren-20",
+      "entity_b_resolved": "Wand-Int-ERDG-5"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.9474027156829834,
+    "t_retrieval": 0.0058727264404296875,
+    "t_computation": 0.0077686309814453125,
+    "t_response": 0.8221874237060547,
+    "total_time": 1.7843706607818604,
+    "cache_hit": false,
+    "error": null
+  },
+  {
+    "query_id": "H030",
+    "ifc_model": "House",
+    "llm_model": "mistral-small",
+    "run_type": "cold",
+    "query_type": "relationship",
+    "pattern": "imperative",
+    "query_text": "Describe the relationship between Unterzug-1 and Wand-Ext-OG-3.",
+    "expected_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Unterzug-1",
+        "type": "IfcBeam"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-3",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "actual_command": {
+      "query_type": "relationship",
+      "entity_a": {
+        "identifier": "name",
+        "value": "Unterzug-1",
+        "type": "IfcBeam"
+      },
+      "entity_b": {
+        "identifier": "name",
+        "value": "Wand-Ext-OG-3",
+        "type": "IfcWallStandardCase"
+      }
+    },
+    "understanding_correct": true,
+    "expected_result": {
+      "relationship": "DISJOINT",
+      "entity_a_resolved": "Unterzug-1",
+      "entity_b_resolved": "Wand-Ext-OG-3"
+    },
+    "actual_result": {
+      "relationship": "DISJOINT"
+    },
+    "end_to_end_correct": true,
+    "t_understanding": 0.8972766399383545,
+    "t_retrieval": 0.012781858444213867,
+    "t_computation": 0.011475563049316406,
+    "t_response": 0.7272739410400391,
+    "total_time": 1.6514594554901123,
+    "cache_hit": false,
+    "error": null
+  }
+]
